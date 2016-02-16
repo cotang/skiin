@@ -1,0 +1,91 @@
+.school{
+	// background: rgba(0,0,0,.3); 				/* убрать! */
+	margin: 240px auto 0;
+	
+	@media (min-width: @screen-sm) {
+		width: @container-sm;
+	}	
+	@media (min-width: @screen-md) {
+		width: @container-md;
+	}		
+	@media (min-width: @screen-lg) {
+		width: @container-lg;
+	}
+}
+
+
+.info{
+	background-color: @yellow;
+}
+.tabs{
+	background-color: #fff;	
+	// &--inside{
+	// 	width: 50%;
+	// }
+}
+.video{
+	background-color: @blue;	
+}
+.common{
+	background-color: #fff;	
+	&--background{
+		background-image: url(../../img/bg09.jpg);
+	}	
+}
+.specials{
+	background-color: #fff;		
+}
+.download{
+	background-color: @yellow;
+}
+.places{
+	background-color: @blue;	
+}
+.teacher{
+	background-color: #fff;	
+	&--yellow{
+		background-color: @light-yellow;		
+	}	
+}
+.features{
+	background-color: #fff;		
+}
+.news{
+	background-color: @blue;		
+}
+.schedule{
+	background-color: #fff;		
+}
+.seminars{
+	background-color: @yellow;
+}
+.submit{
+	background-color: #fff;		
+}
+.contact-us{
+	background-color: @blue;	
+}
+
+
+.pic{
+	position: relative;
+
+	&--double{
+		position: absolute;
+		height: 200%;
+		width: 100%;
+		background-image: url(../../img/bg08.jpg);
+		z-index: -1;
+		margin-left: -30px;
+	}
+}
+
+
+
+.block{
+	height: @height;
+
+	&--2x{
+		height: @height * 2;		
+	}
+}
