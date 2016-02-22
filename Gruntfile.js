@@ -65,6 +65,36 @@ module.exports = function(grunt) {
       }
     },
 
+    // склеиваем файлы js
+    concat: {
+      start: {
+        src: [
+          'bower_components/jquery/dist/jquery.js',    
+          'src/js/*.js'
+        ],
+        dest: 'build/js/script.js'
+      }
+    },
+
+    // минимизируем файлы js
+    uglify: {
+      start: {
+        files: {
+          'build/js/script.min.js': ['build/js/script.js']
+        }
+      }
+    },
+
+    clean: {
+      build: [
+        'build/css',
+        'build/img',
+        'build/js',
+        'build/*.html',
+        'build/*.ico',
+      ]
+    },
+
     // процесс копирования
     copy: {
       // копируем картинки
@@ -76,6 +106,22 @@ module.exports = function(grunt) {
         src: ['**/*.{png,jpg,gif,svg}'],
         // куда
         dest: 'build/img/',
+      },
+      favicon: {
+        expand: true,
+        src: ['src/img/favicons/favicon.ico'],
+        dest: 'build/',
+        flatten: true,
+        filter: 'isFile'
+      },
+      fonts: {
+        expand: true,
+        // откуда
+        cwd: 'src/fonts/',
+        // какие файлы (все шрифты (см. расширения) из корня указанной папки и всех подпапок)
+        src: ['**'],
+        // куда
+        dest: 'build/fonts/',
       },
 
       js: {
@@ -128,6 +174,14 @@ module.exports = function(grunt) {
           spawn: false,
         },
       },
+       // следить за скриптами     
+      scripts: {
+        files: ['src/js/script.js'],
+        tasks: ['js'],
+        options: {
+          spawn: false
+        },
+      },            
       // следить за картинками
       images: {
         // за фактом с сохранения каких файлов следить
@@ -138,6 +192,7 @@ module.exports = function(grunt) {
           spawn: false
         },
       },
+
       // следить за файлами разметки
       html: {
         // за фактом с сохранения каких файлов следить
@@ -158,7 +213,7 @@ module.exports = function(grunt) {
           src : [
             'build/css/*.css',
             'build/js/*.js',
-            'build/img/*.{png,jpg,gif,svg}',
+            'build/img/*.{png,jpg,gif,svg}',        
             'build/*.html',
           ]
         },
@@ -184,10 +239,12 @@ module.exports = function(grunt) {
 
   // задача по умолчанию
   grunt.registerTask('default', [
+    'clean:build',
+    'copy:fonts',    
     'style',
-    'img',
+    'js',   
+    'img',  
     'includereplace:html',
-    'copy:js',
     'browserSync',
     'watch'
   ]);
@@ -200,6 +257,12 @@ module.exports = function(grunt) {
     'cssmin',
   ]);
 
+  // только компиляция скриптов
+  grunt.registerTask('js', [
+    'concat',             
+    'uglify',            
+  ]);  
+
   // только обработка картинок
   grunt.registerTask('img', [
     'copy:img',
@@ -208,7 +271,9 @@ module.exports = function(grunt) {
   // сборка
   grunt.registerTask('build', [
     'style',
+    'js',    
     'img',
+    'fonts',    
     'includereplace:html',
     'gh-pages',
   ]);
