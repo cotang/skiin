@@ -1,8 +1,3 @@
-// .av-large-gap.av-fixed-size .av-masonry-entry .av-inner-masonry { background-color: transparent !important; }
-
-// .main_color .av-masonry {
-// background-color: transparent;
-// }
 
 // :root {
   @gutter-width: 60px;  
@@ -44,12 +39,17 @@
   width: @width;
 }
 
-.mobile-hidden{
+.xs-hidden{
 	@media (max-width: @screen-sm) {
 		height: 0 !important;
 	}		
 }
-.mobile-sesqui{
+.sm-hidden{
+	@media (max-width: @screen-md) {
+		height: 0 !important;
+	}		
+}
+.xs-sesqui{
 	@media (max-width: @screen-sm) {
 		height: @height*1.5 !important;
 

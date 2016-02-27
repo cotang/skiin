@@ -1,0 +1,107 @@
+.page-sidebar{
+	// display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 300px;
+	background-color: #fff;
+	color: @gray;
+	box-shadow: 0 0 35px 0px rgba(0,0,0,.22);
+	z-index: 10;
+
+	&__inner{
+		margin: 30px;
+	}
+	
+	&__title-wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title{
+		display: inline-block;
+		font-family: @literra-plain-bold;
+		font-size: @font-subtitle;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	&__list{
+		padding-left: 0;
+		margin-top: 40px;
+	}
+
+	&__item{
+		display: block;
+		margin: 0;
+		border-bottom: 1px solid @gray;
+		position: relative;
+		&:first-child a:after{
+			display: none;
+		}
+
+		a{
+			color: @gray;
+			font-family: @literra-plain-book;
+			font-size: @font-sidebar;
+			line-height: 40px;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 10px;
+				border: 5px solid transparent;	
+				border-left: 5px solid @gray;
+			}			
+		}
+	}
+
+	&__address{
+		font-family: @literra-plain-book;
+		font-size: @font-subtitle;	
+		&:before{
+			content: '';
+			display: block;
+			background-image: url(../img/icon-place-sidebar.png);
+			width: 12px;
+			height: 18px;
+			margin-bottom: 5px;
+		}	
+	}
+
+	&__contacts{
+		padding-left: 0;
+
+		li{
+			display: block;
+			margin: 10px 0;
+			font-family: @literra-plain-bold;	
+			font-size: @font-p;						
+			&:first-child{
+				font-family: @montserrat-regular;
+			}
+
+			a{
+				color: @blue;
+			}
+		}
+	}
+
+	&__textarea{
+		width: 100%;
+		font-family: @literra-plain-book;	
+		font-size: @font-p;	
+		border: 1px solid @gray;
+		&:focus{
+			color: @text;
+		}
+		&:focus::-webkit-input-placeholder{
+			color: transparent;					
+		}				
+		&:focus::placeholder{
+			color: transparent;					
+		}
+
+	}
+}

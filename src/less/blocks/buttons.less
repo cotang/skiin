@@ -1,0 +1,54 @@
+.btn{
+	display: block;
+	text-transform: uppercase;
+	font-family: @literra-plain-bold;
+	font-size: @font-small;
+	padding: 15px 25px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+
+	&--black{
+		background-color: @text;
+		color: #fff;
+		&:hover{
+			background-color: #fff;
+			color: @text;		
+		}
+	}
+	&--yellow{
+		background-color: @yellow;
+		color: @text;
+		
+	}
+	&--submit{
+		background-color: @blue;
+		border: 2px solid #fff;
+		padding: 13px 25px;
+		// color: @text;
+	}
+	&--close{
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		background-color: transparent;
+		position: relative;
+		display: inline-block;
+		&:before, &:after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 4px;
+			background-color: @text;
+			position: absolute;
+			top: 50%;
+		}
+		&:before{
+			transform: rotate(-45deg);
+		}		
+		&:after{
+			transform: rotate(45deg);
+		}
+	}	
+}
+

@@ -19,13 +19,44 @@
           <li class="page-header__media-item"><a href="" class="page-header__media-link"  style="background-image: url(img/social-fb.png); width:10px; height:20px;"></a></li>
           <li class="page-header__media-item"><a href="" class="page-header__media-link"  style="background-image: url(img/social-vk.png); width:23px; height:23px;"></a></li>
           <li class="page-header__media-item"><a href="" class="page-header__media-link"  style="background-image: url(img/social-in.png); width:23px; height:23px;"></a></li>
-          <li class="page-header__media-item"><a href="" class="page-header__media-link"  style="background-image: url(img/social-burger.png); width:24px; height:22px;"></a></li>
+          <li class="page-header__media-item"><a href="" class="page-header__media-link"  id="hamburger"  style="background-image: url(img/social-burger.png); width:24px; height:22px;"></a></li>
         </ul>
         <div class="page-header__telephone">8&nbsp;(911)&nbsp;027&nbsp;51&nbsp;22</div>
       </div>
     </div>
   </header>
 
+<aside class="page-sidebar">
+  <div class="page-sidebar__inner">
+    <div class="page-sidebar__title-wrapper">
+      <h3 class="page-sidebar__title">Навигация</h3>
+      <a class="btn  btn--close" id="page-sidebar__close"  href=""></a>
+    </div>
+    <ul class="page-sidebar__list">
+      <li class="page-sidebar__item"><a href="">Главная</a></li>
+      <li class="page-sidebar__item"><a href="">Мы в контакте</a></li>
+      <li class="page-sidebar__item"><a href="">Мы в facebook</a></li>
+    </ul>
+    <p class="page-sidebar__address">Россия, Санкт-Петербург, наб. р. Мойки, 58</p>
+    <ul class="page-sidebar__contacts">
+      <li>8&nbsp;(911)&nbsp;027&nbsp;51&nbsp;22</li>
+      <li>12:00&nbsp;-&nbsp;22:00&nbsp;ежедневно</li>
+      <li><a href="">stepan.kovalenko@gmail.com</a></li>
+    </ul>
+    <form action="">
+        <textarea class="page-sidebar__textarea" rows="3" placeholder="Написать нам письмо"></textarea>
+    </form>
+  </div>
+</aside>
+
+
+	<section class="main-gallery">
+		<ul class="main-gallery__inner" id="mainGallery">
+			<li class="main-gallery__item" style="background-image: url(img/main-slider/01.jpg);"></li>
+			<li class="main-gallery__item" style="background-image: url(img/main-slider/02.jpg);"></li>
+			<li class="main-gallery__item" style="background-image: url(img/main-slider/03.jpg);"></li>
+		</ul>
+	</section>
 
 
 	<section class="school">
@@ -34,31 +65,23 @@
 			<!-- <div class="masonry__gutter"></div> -->
 			<div class="masonry__column"></div>	
 			<!-- content -->
-			<div class="masonry__item  masonry__item--double  mobile-sesqui">
+			<div class="masonry__item  masonry__item--double  xs-sesqui">
 				<div class="block  info">
 					<h1 class="info__title">Мы первая экспериментальная школа дизайна в России</h1>
 					<p class="info__text">Рады Вас приветствовать на нашем официальном сайте. Мы готовы Вас обучить и вдохновить на творчество!</p>
 					<div class="info__btn-group">
-						<button  class="btn">Подробнее</button>
+						<button  class="btn  btn--black">Подробнее</button>
 					</div>
 				</div>
 			</div>
-			<div class="masonry__item  mobile-hidden">
+			<div class="masonry__item  xs-hidden">
 				<div class="block  transparent"></div>
 			</div>
 			<div class="masonry__item">
-				<div class="block  tabs">
-					<button  class="tabs__arrow-right"></button>
-					<div class="tabs__counter">
-						<a href=""  class="tabs__counter-main">01</a>
-						<span>/</span>
-						<a href=""  class="tabs__counter-average">03</a>											
-					</div>
-					<button  class="tabs__arrow-left"></button>	
-				</div>
+				<div class="block  tabs" id="mainGalleryTabs"></div>
 			</div>
 
-			<div class="masonry__item  masonry__item--double  mobile-hidden">
+			<div class="masonry__item  masonry__item--double  xs-hidden  sm-hidden">
 				<div class="block  transparent"></div>				
 			</div>
 			<div class="masonry__item">
@@ -67,7 +90,7 @@
 					<p>Видео-презентация</p>
 				</div>					
 			</div>
-			<div class="masonry__item  mobile-hidden">
+			<div class="masonry__item  xs-hidden  sm-hidden">
 				<div class="block  transparent"></div>					
 			</div>
 
@@ -143,7 +166,7 @@
 					<p class="teacher__text">Веб-дизайнер, графический дизайнер и SEO-продвиженец, работает дизайнером в отделе маркетинга компании Газпром 6 лет.</p>		
 				</div>
 			</div>
-			<div class="masonry__item  masonry__item--double  mobile-sesqui">
+			<div class="masonry__item  masonry__item--double  xs-sesqui">
 				<div class="block  common  common--background">
 					<h2 class="common__title">У нас только<br /> учителя - практики</h2>
 					<p class="common__text">Мы выбираем только учителей, которые сами работают по теме, которую предподают. Это очень важная часть в нашей программе.</p>
@@ -214,7 +237,7 @@
 				</div>
 			</div>
 
-			<div class="masonry__item  masonry__item--high  mobile-sesqui">
+			<div class="masonry__item  masonry__item--high  xs-sesqui">
 				<div class="block  block--high  schedule">
 					<h3 class="schedule__title">Расписание on-line</h3>
 					<p class="schedule__text">Мы самым внимательным образом составляем индивидуально для каждого программу обучения и практики работы в графических программах.</p>	
@@ -224,16 +247,13 @@
 				</div>
 			</div>
 			<div class="masonry__item  masonry__item--double  masonry__item--high">
-				<div class="block  block--high  gallery">
-					<div class="block  tabs">
-						<button  class="tabs__arrow-right"></button>
-						<div class="tabs__counter">
-							<a href=""  class="tabs__counter-main">01</a>
-							<span>/</span>
-							<a href=""  class="tabs__counter-average">09</a>
-						</div>
-						<button  class="tabs__arrow-left"></button>	
-					</div>
+				<div class="block  block--high  third-gallery">
+					<ul class="third-gallery__inner" id="thirdGallery">
+						<li class="third-gallery__item" style="background-image: url(img/third-slider/01.jpg);"></li>
+						<li class="third-gallery__item" style="background-image: url(img/third-slider/02.jpg);"></li>
+						<li class="third-gallery__item" style="background-image: url(img/third-slider/03.jpg);"></li>
+					</ul>
+					<div class="block  tabs" id="thirdGalleryTabs"></div>
 				</div>					
 			</div>
 

@@ -1,7 +1,7 @@
 .school{
-	background: rgba(0,0,0,.3); 				/* убрать! */
+	// background: rgba(0,0,0,.3); 				/* убрать! */
 	margin: 0 auto;
-	z-index: 2;
+	z-index: 3;
 	width: @screen-xs;
 	
 	@media (min-width: @screen-sm) {
@@ -60,58 +60,70 @@
 .transparent{
 	background-color: transparent;
 
-
 }
 .tabs{
 	background-color: #fff;	
 	font-family: @montserrat-regular;
 	text-align: center;
 	position: relative;
-	
-	a{
-		color: @text;
-	}
-	&__counter{
-	position: absolute;
-    left: 0;
-    right: 0;
-    width: 50%;
-    top: 50%;
-	transform: translateY(-50%);
-    margin: auto;		
-	}
-	&__counter-main{
-		font-size: @font-largest;			
-	}
-	span{
-		vertical-align: super;
-	}
-	&__counter-average{
-		font-size: @font-subtitle;
-		vertical-align: super;
-	}	
-	&__arrow-left{
-		position: absolute;		
+	padding-top: 0;
+
+	.slick-prev{
+		position: absolute;	
+		left: 50%;
+		transform: translateX(-50%);	
 		top: 50px;
-		background-image: url(../../img/arrow-left.png);
+		background-image: url(../img/arrow-left.png);
 		border: none;
 		outline: none;		
 		color: transparent;
 		background-color: transparent;
 		width: 22px;
 		height: 28px;
+		&:hover{
+			background-image: url(../img/arrow-left-hover.png);			
+		}
 	}
-	&__arrow-right{
-		position: absolute;		
+
+	.slick-next{
+		position: absolute;	
+		left: 50%;
+		transform: translateX(-50%);			
 		bottom: 50px;
-		background-image: url(../../img/arrow-right.png);		
+		background-image: url(../img/arrow-right.png);		
 		border: none;
 		outline: none;		
 		color: transparent;
 		background-color: transparent;
 		width: 22px;
-		height: 28px;		
+		height: 28px;
+		&:hover{
+			background-image: url(../img/arrow-right-hover.png);				
+		}		
 	}	
+
+	.slick-dots{
+		padding-left: 0;
+		margin: 0;
+		position: absolute;
+		left: 50%;		
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+
+		li{
+			color: @text;			
+			display: inline-block;
+			font-size: @font-subtitle;
+			button{
+				border: none;
+				outline: none;
+				background-color: transparent;
+			}
+		}
+		.slick-active{
+			font-size: @font-largest;			
+		}
+	}
 }
 .video{
 	background-color: @blue;
@@ -119,7 +131,7 @@
 
 	&__btn{
 		display: inline-block;
-		background-image: url(../../img/icon-video.png);
+		background-image: url(../img/icon-video.png);
 		border: none;
 		outline: none;		
 		color: transparent;
@@ -172,7 +184,7 @@
 	}
 
 	&--background{
-		background-image: url(../../img/bg09.jpg);
+		background-image: url(../img/bg09.jpg);
 	}	
 }
 .specials{
@@ -201,10 +213,13 @@
 .download{
 	background-color: @yellow;
 	text-align: center;	
+	// &:hover{
+	// 	background-color: @blue;		
+	// }
 
 	&__btn{
 		display: inline-block;
-		background-image: url(../../img/icon-download.png);
+		background-image: url(../img/icon-download.png);
 		border: none;
 		outline: none;		
 		color: transparent;
@@ -229,7 +244,7 @@
 
 	&__pic{
 		display: inline-block;
-		background-image: url(../../img/icon-place.png);
+		background-image: url(../img/icon-place.png);
 		border: none;
 		outline: none;		
 		color: transparent;
@@ -371,21 +386,7 @@
 	}
 }
 
-.gallery{
-	position: relative;
-	background-image: url(../../img/bg08.jpg);
 
-	.tabs{
-		width: 50%;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-
-		@media (max-width: @screen-sm) {
-			width: 100%;
-		}
-	}
-}
 
 
 .seminars{
@@ -394,7 +395,7 @@
 
 	&__pic{
 		display: inline-block;
-		background-image: url(../../img/icon-two-tools.png);
+		background-image: url(../img/icon-two-tools.png);
 		border: none;
 		outline: none;		
 		color: transparent;
@@ -455,31 +456,5 @@
 		}
 	}
 }
-
-
-.btn{
-	display: block;
-	text-transform: uppercase;
-	color: #fff;
-	font-family: @literra-plain-bold;
-	font-size: @font-small;
-	background-color: @text;
-	padding: 15px 25px;
-	border: none;
-	outline: none;
-	box-sizing: border-box;
-
-	&--yellow{
-		background-color: @yellow;
-		color: @text;
-	}
-	&--submit{
-		background-color: @blue;
-		border: 2px solid #fff;
-		padding: 13px 25px;
-		// color: @text;
-	}	
-}
-
 
 
