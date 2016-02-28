@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inintial scale=1.0">		
+	<title>SKIIN</title>
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+
+<aside class="page-sidebar">
+  <div class="page-sidebar__inner">
+    <div class="page-sidebar__title-wrapper">
+      <h3 class="page-sidebar__title">Навигация</h3>
+      <a class="btn  btn--close" id="page-sidebar__close"  href=""></a>
+    </div>
+    <ul class="page-sidebar__list">
+      <li class="page-sidebar__item"><a href="">Главная</a></li>
+      <li class="page-sidebar__item"><a href="">Мы в контакте</a></li>
+      <li class="page-sidebar__item"><a href="">Мы в facebook</a></li>
+    </ul>
+    <p class="page-sidebar__address">Россия, Санкт-Петербург, наб. р. Мойки, 58</p>
+    <ul class="page-sidebar__contacts">
+      <li>8&nbsp;(911)&nbsp;027&nbsp;51&nbsp;22</li>
+      <li>12:00&nbsp;-&nbsp;22:00&nbsp;ежедневно</li>
+      <li><a href="">stepan.kovalenko@gmail.com</a></li>
+    </ul>
+    <form action="">
+        <textarea class="page-sidebar__textarea" rows="3" placeholder="Написать нам письмо"></textarea>
+    </form>
+  </div>
+</aside>
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="page-header__logo">
+        <a href="#"  class="page-header__logo-pic"><img src="img/logo.png" alt=""></a>
+      </div>
+      <div class="page-header__social">
+        <ul class="page-header__media-list">
+          <li class="page-header__media-item"><a href="" class="page-header__media-link"  style="background-image: url(img/social-fb.png); width:10px; height:20px;"></a></li>
+          <li class="page-header__media-item"><a href="" class="page-header__media-link"  style="background-image: url(img/social-vk.png); width:23px; height:23px;"></a></li>
+          <li class="page-header__media-item"><a href="" class="page-header__media-link"  style="background-image: url(img/social-in.png); width:23px; height:23px;"></a></li>
+          <li class="page-header__media-item"><a href="" class="page-header__media-link"  id="hamburger"  style="background-image: url(img/social-burger.png); width:24px; height:22px;"></a></li>
+        </ul>
+        <div class="page-header__telephone">8&nbsp;(911)&nbsp;027&nbsp;51&nbsp;22</div>
+      </div>
+    </div>
+  </header>
+
+
+
+	<section class="main-gallery">
+		<ul class="main-gallery__inner" id="mainGallery">
+			<li class="main-gallery__item" style="background-image: url(img/main-slider/01.jpg);"></li>
+			<li class="main-gallery__item" style="background-image: url(img/main-slider/02.jpg);"></li>
+			<li class="main-gallery__item" style="background-image: url(img/main-slider/03.jpg);"></li>
+		</ul>
+	</section>
+
+
+	<section class="school">
+		<div class="masonry">
+			<!-- settings -->
+			<!-- <div class="masonry__gutter"></div> -->
+			<div class="masonry__column"></div>	
+			<!-- content -->
+			<div class="masonry__item  masonry__item--double  xs-sesqui">
+				<div class="block  info">
+					<h1 class="info__title">Мы первая экспериментальная школа дизайна в России</h1>
+					<p class="info__text">Рады Вас приветствовать на нашем официальном сайте. Мы готовы Вас обучить и вдохновить на творчество!</p>
+					<div class="info__btn-group">
+						<button  class="btn  btn--black">Подробнее</button>
+					</div>
+				</div>
+			</div>
+			<div class="masonry__item  xs-hidden">
+				<div class="block  transparent"></div>
+			</div>
+			<div class="masonry__item">
+				<div class="block  tabs" id="mainGalleryTabs"></div>
+			</div>
+
+			<div class="masonry__item  masonry__item--double  xs-hidden  sm-hidden">
+				<div class="block  transparent"></div>				
+			</div>
+			<div class="masonry__item">
+				<div class="block  video">
+					<button class="video__btn"></button>
+					<p>Видео-презентация</p>
+				</div>					
+			</div>
+			<div class="masonry__item  xs-hidden  sm-hidden">
+				<div class="block  transparent"></div>					
+			</div>
+
+			<div class="masonry__item">
+				<div class="block  common">				
+					<h2 class="common__title">Общий курс дизайна</h2>
+					<p class="common__text">Мы создали специальный курс с общим пониманием всего дизайна в целом, на котором Вы получите все необходимые Вам знания по дизайну от дизайнеров, которые непосредственно работают в этой сфере.</p>
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block"  style="background-image: url(img/bg03.jpg);"></div>				
+			</div>
+			<div class="masonry__item">
+				<div class="block  specials">	
+					<h2 class="specials__title">Специальные обучающие программы</h2>
+					<p class="specials__text">Мы обучим Вас пользоваться необходимыми программами, а также дадим основу для саморазвития и совершенства полученных в нашей школе образования.</p>
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block"  style="background-image: url(img/bg04.jpg);"></div>
+			</div>
+
+			<div class="masonry__item">
+				<div class="block  tabs">
+					<a href=""  class="tabs__arrow-right"></a>
+					<div class="tabs__counter">
+						<a href=""  class="tabs__counter-main">01</a>
+						<span>/</span>
+						<a href=""  class="tabs__counter-average">03</a>											
+					</div>
+					<a href=""  class="tabs__arrow-left"></a>
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block  specials">
+				<h2 class="specials__title">Возможность обучения из дома on-line</h2>
+				<p class="specials__text">Специальные включения каждого урока по Skype или Periscope.</p>	
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block"  style="background-image: url(img/bg05.jpg);"></div>				
+			</div>
+			<div class="masonry__item">
+				<div class="block  specials">
+					<h2 class="specials__title">Установка необходимого программного обеспечения</h2>
+					<p class="specials__text">Установка всего необходимого для Вашей работы профессионального программного обеспечения.</p>
+				</div>				
+			</div>
+
+			<div class="masonry__item">
+				<div class="block  download">			
+					<button class="download__btn"></button>
+					<p>Скачать price</p>
+				</div>				
+			</div>
+			<div class="masonry__item">
+				<div class="block  places">			
+					<div class="places__pic"></div>
+					<p>Обучение в Москве и Санкт-Петербурге</p>
+				</div>						
+			</div>
+			<div class="masonry__item  masonry__item--double">
+				<div class="block  map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7996.181987117928!2d30.31167033206506!3d59.931387219867545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631049ef02bdd%3A0xd12bcc5fca1194c6!2z0L3QsNCxLiDRgNC10LrQuCDQnNC-0LnQutC4LCA1OCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MDAwMA!5e0!3m2!1sru!2sru!4v1456142925600" width="586" height="293" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="masonry__item  masonry__item--double">
+				<div class="block  teacher">
+					<img src="img/person01.jpg" alt="">
+					<h3 class="teacher__title">Илья Потехин</h3>
+					<img src="img/4stars.png" alt="">
+					<p class="teacher__text">Веб-дизайнер, графический дизайнер и SEO-продвиженец, работает дизайнером в отделе маркетинга компании Газпром 6 лет.</p>		
+				</div>
+			</div>
+			<div class="masonry__item  masonry__item--double  xs-sesqui">
+				<div class="block  common  common--background">
+					<h2 class="common__title">У нас только<br /> учителя - практики</h2>
+					<p class="common__text">Мы выбираем только учителей, которые сами работают по теме, которую предподают. Это очень важная часть в нашей программе.</p>
+					<div class="common__btn-group">
+						<button  class="btn">Связаться с нами</button>
+					</div>
+				</div>									
+			</div>
+
+			<div class="masonry__item  masonry__item--double">
+			<div class="block  teacher  teacher--yellow">
+					<img src="img/person02.jpg" alt="">
+					<h3 class="teacher__title">Ольга Вершинина</h3>
+					<img src="img/5stars.png" alt="">	
+					<p class="teacher__text  teacher__text--color">Дизайнер, работает в отделе рекламы  в полиграфической компании, обучалась в Лондоне графическому дизайну.</p>
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block  features">
+					<img src="img/icon-lightning.png" alt="">
+					<p class="features__numbers">250</p>
+					<p class="features__subject">Часов занятий</p>
+				</div>			
+			</div>
+			<div class="masonry__item">
+				<div class="block  features"  style="background-image: url(img/bg06.jpg);">
+					<img src="img/icon-drop.png" alt="">
+					<p class="features__numbers">20</p>
+					<p class="features__subject">Бесплатных семинаров</p>	
+				</div>								
+			</div>
+
+			<div class="masonry__item">
+				<div class="block  news">			
+					<h3 class="news__title">Новости</h3>
+					<div class="news__wrapper">	
+						<p class="news__date">12 февраля 2016</p>					
+						<p class="news__topic">Лекция по созданию шрифтов</p>
+						<p class="news__comments">16 комментариев</p>							
+					</div>	
+					<div class="news__tab-list">
+						<a href="" class="news__tab-item  news__tab-item--active"></a>
+						<a href="" class="news__tab-item"></a>
+						<a href="" class="news__tab-item"></a>
+					</div>	
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block  teacher">
+					<img src="img/person03.jpg" alt="">
+					<h3 class="teacher__title">Олег Ванин</h3>
+					<img src="img/4stars.png" alt="">
+					<p class="teacher__text">Графический дизайнер-шрифтовик, работает дизайнером в рекламном агенстве.</p>
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block  features"  style="background-image: url(img/bg07.jpg);">
+					<img src="img/icon-tool.png" alt="">
+					<p class="features__numbers">10</p>
+					<p class="features__subject">Лучших преподавателей</p>
+				</div>
+			</div>
+			<div class="masonry__item">
+				<div class="block  features">
+					<img src="img/icon-bulb.png" alt="">
+					<p class="features__numbers">78</p>
+					<p class="features__subject">Часов практики</p>	
+				</div>
+			</div>
+
+			<div class="masonry__item  masonry__item--high  xs-sesqui">
+				<div class="block  block--high  schedule">
+					<h3 class="schedule__title">Расписание on-line</h3>
+					<p class="schedule__text">Мы самым внимательным образом составляем индивидуально для каждого программу обучения и практики работы в графических программах.</p>	
+					<div class="schedule__btn-group">
+						<button  class="btn  btn--yellow">Отправить заявку</button>	<!-- что отправляем? -->
+					</div>		
+				</div>
+			</div>
+			<div class="masonry__item  masonry__item--double  masonry__item--high">
+				<div class="block  block--high  third-gallery">
+					<ul class="third-gallery__inner" id="thirdGallery">
+						<li class="third-gallery__item" style="background-image: url(img/third-slider/01.jpg);"></li>
+						<li class="third-gallery__item" style="background-image: url(img/third-slider/02.jpg);"></li>
+						<li class="third-gallery__item" style="background-image: url(img/third-slider/03.jpg);"></li>
+					</ul>
+					<div class="block  tabs" id="thirdGalleryTabs"></div>
+				</div>					
+			</div>
+
+			<div class="masonry__item">
+				<div class="block  seminars">			
+					<div class="seminars__pic"></div>
+					<p>Еженедельные бесплатные семинары</p>
+				</div>									
+			</div>
+
+			<div class="masonry__item">
+				<div class="block  contact-us">
+					<h3 class="contact-us__title">Свяжитесь с нами</h3>
+					<form action="">
+						<label><input type="email" placeholder="Ваш E-mail"></label>
+						<div class="contact-us__btn-group">
+							<button  class="btn  btn--submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	<footer>2016 © Copyright - Foundation theme by <a href="http://deslab.net">Stepan Kovalenko</a></footer>
+
+	</section>
+
+<!-- <script src="js/script.min.js"></script> -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
