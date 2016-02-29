@@ -231,7 +231,15 @@ module.exports = function(grunt) {
           }
         }
       }
-    }
+    },
+
+    // публикация на gh-pages
+    'gh-pages': {
+        options: {
+          base: 'build'
+        },
+        src: ['**']
+    } 
 
   });
 
@@ -245,7 +253,7 @@ module.exports = function(grunt) {
     'js',   
     'img',  
     'includereplace:html',
-    'browserSync',
+    'browserSync', 
     'watch'
   ]);
 
@@ -274,8 +282,11 @@ module.exports = function(grunt) {
     'js',    
     'img',
     'fonts',    
-    'includereplace:html',
-    'gh-pages',
+    'includereplace:html'
   ]);
 
+  // публикация на gh-pages
+  grunt.registerTask('gh-pages', [
+    'gh-pages'
+  ]);
 };

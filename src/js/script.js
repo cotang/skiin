@@ -31,6 +31,16 @@ jQuery(document).ready(function($) {
 	});
 
 
+      // Review slick
+  // if ($(window).width() > 1200) {
+  //   $('.multiple-items').slick({
+  //       infinite: true,
+  //       slidesToShow: 2,
+  //       slidesToScroll: 2
+  //   });
+  // }
+
+
 $('#mainGallery').slick({
   arrows: true,
   appendArrows: $('#mainGalleryTabs'),  
@@ -38,7 +48,7 @@ $('#mainGallery').slick({
   appendDots: $('#mainGalleryTabs'),  
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 3000,  
+  autoplaySpeed: 4000,  
   centerMode: true,   
   centerPadding: '0px',
   variableWidth: true, 
@@ -54,13 +64,9 @@ $('#thirdGallery').slick({
   appendDots: $('#thirdGalleryTabs'),  
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 3000,  
+  autoplaySpeed: 4000,  
   slidesToShow: 1
 });
-
-
-
-
 
 
 

@@ -1387,6 +1387,12 @@ footer a {
 	padding: 13px 25px;
 }
 
+.btn--submit-sidebar {
+	background-color: #2297d8;
+	padding: 13px 25px;
+	color: #fff;
+}
+
 .btn--close {
 	width: 20px;
 	height: 20px;
