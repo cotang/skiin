@@ -695,6 +695,25 @@ body {
 	transform: translateX(-293px);
 }
 
+.second-gallery {
+	position: relative;
+	padding: 0 !important;
+}
+
+.second-gallery__inner {
+	padding-left: 0;
+	margin: 0;
+}
+
+.second-gallery__item {
+	list-style-type: none;
+	height: 293px;
+	width: 293px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
 .third-gallery {
 	position: relative;
 	padding: 0 !important;
