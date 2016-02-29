@@ -664,7 +664,7 @@ body {
 .page-header__telephone:before {
 	content: "";
 	display: inline-block;
-	background-image: url(../../img/social-tel.png);
+	background-image: url(../img/social-tel.png);
 	width: 22px;
 	height: 24px;
 	margin-right: 10px;

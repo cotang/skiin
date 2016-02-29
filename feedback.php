@@ -26,7 +26,8 @@ if($post) {
 		$mail = new PHPMailer(); // init class PHPMailer
 		$mail->From = $email; // e-mail from
 		// $mail->FromName = $name; // name from
-		$mail->AddAddress('warlocked@mail.ru', 'Konstantin Bogdanov'); // e-mail and name to
+		$mail->AddAddress('stepan.kovalenko@gmail.com', 'Stepan Kovalenko'); // e-mail and name to
+		$mail->AddAddress('warlocked@mail.ru', 'Konstantin Bogdanov'); // e-mail and name to		
 		$mail->IsHTML(true); // HTML format for mail
 		$mail->Subject = "The correspondence from SKIIN"; // mail subject
 
