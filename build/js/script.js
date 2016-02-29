@@ -10105,6 +10105,17 @@ $('#mainGallery').slick({
 });
 
 
+$('#secondGallery').slick({
+  arrows: true,
+  appendArrows: $('#secondGalleryTabs'),  
+  dots: true,
+  appendDots: $('#secondGalleryTabs'),  
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 4000,  
+  slidesToShow: 1
+});
+
 
 $('#thirdGallery').slick({
   arrows: true,

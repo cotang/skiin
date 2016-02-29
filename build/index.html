@@ -25,9 +25,9 @@
       <li>12:00&nbsp;-&nbsp;22:00&nbsp;ежедневно</li>
       <li><a href="">stepan.kovalenko@gmail.com</a></li>
     </ul>
-    <form action="">
+<!--     <form action="">
         <textarea class="page-sidebar__textarea" rows="3" placeholder="Написать нам письмо"></textarea>
-    </form>
+    </form> -->
   </div>
 </aside>
 
@@ -114,15 +114,7 @@
 			</div>
 
 			<div class="masonry__item">
-				<div class="block  tabs">
-					<a href=""  class="tabs__arrow-right"></a>
-					<div class="tabs__counter">
-						<a href=""  class="tabs__counter-main">01</a>
-						<span>/</span>
-						<a href=""  class="tabs__counter-average">03</a>											
-					</div>
-					<a href=""  class="tabs__arrow-left"></a>
-				</div>
+				<div class="block  tabs" id="secondGalleryTabs"></div>				
 			</div>
 			<div class="masonry__item">
 				<div class="block  specials">
@@ -131,7 +123,14 @@
 				</div>
 			</div>
 			<div class="masonry__item">
-				<div class="block"  style="background-image: url(img/bg05.jpg);"></div>				
+				<div class="block  second-gallery">
+					<ul class="second-gallery__inner" id="secondGallery">
+						<li class="second-gallery__item" style="background-image: url(img/second-slider/01.jpg);"></li>
+						<li class="second-gallery__item" style="background-image: url(img/second-slider/02.jpg);"></li>
+						<li class="second-gallery__item" style="background-image: url(img/second-slider/03.jpg);"></li>
+					</ul>
+					
+				</div>		
 			</div>
 			<div class="masonry__item">
 				<div class="block  specials">
@@ -272,6 +271,7 @@
 						<div class="contact-us__btn-group">
 							<button class="btn  btn--submit">Отправить</button>
 						</div>
+						<div class="form-notif"></div>
 					</form>
 				</div>
 			</div>

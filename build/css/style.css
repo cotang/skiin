@@ -664,7 +664,7 @@ body {
 .page-header__telephone:before {
 	content: "";
 	display: inline-block;
-	background-image: url(../../img/social-tel.png);
+	background-image: url(../img/social-tel.png);
 	width: 22px;
 	height: 24px;
 	margin-right: 10px;
@@ -693,6 +693,25 @@ body {
 	position: relative;
 	-webkit-transform: translateX(-293px);
 	transform: translateX(-293px);
+}
+
+.second-gallery {
+	position: relative;
+	padding: 0 !important;
+}
+
+.second-gallery__inner {
+	padding-left: 0;
+	margin: 0;
+}
+
+.second-gallery__item {
+	list-style-type: none;
+	height: 293px;
+	width: 293px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
 }
 
 .third-gallery {

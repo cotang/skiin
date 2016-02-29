@@ -253,7 +253,7 @@ module.exports = function(grunt) {
     'js',   
     'img',  
     'includereplace:html',
-    'browserSync', 
+    'browserSync',   
     'watch'
   ]);
 
@@ -281,12 +281,13 @@ module.exports = function(grunt) {
     'style',
     'js',    
     'img',
-    'fonts',    
-    'includereplace:html'
+    'copy:fonts',    
+    'includereplace:html',
+    'gh-pages'     
   ]);
 
-  // публикация на gh-pages
-  grunt.registerTask('gh-pages', [
-    'gh-pages'
-  ]);
+  // // публикация на gh-pages
+  // grunt.registerTask('gh-pages', [
+  //   'gh-pages'
+  // ]);
 };
